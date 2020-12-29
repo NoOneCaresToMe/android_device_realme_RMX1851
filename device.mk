@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
 # Init scripts
 PRODUCT_PACKAGES += \
     init.custom.rc \
-    init.qcom.rc
+    init.qcom.rc \
+    init.realmehub.rc
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
@@ -120,6 +121,11 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# RealmeHub
+PRODUCT_PACKAGES += \
+     RealmeHub \
+     RealmeDoze
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -163,3 +169,4 @@ PRODUCT_BOOT_JARS += \
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
+
